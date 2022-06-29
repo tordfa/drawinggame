@@ -1,2 +1,2 @@
 # drawinggame
-Online drawing game bases on React and websockets
+Online drawing game based on React and websockets.
