@@ -2,7 +2,7 @@ const express = require('express')
 const WebSocket = require("ws");
 const url = require('url');
 const app = express()
-const port = 3001
+const port = 8000;
 var cors = require('cors')
 
 const Server = require('./Classes/Server')
@@ -11,7 +11,7 @@ const Gamelobby = require('./Classes/GameLobby');
 var server = new Server();
 
 app.use(cors())
-app.use(express.static("D:/Prosjekter/Tegnespill/client"));
+app.use(express.static("../client3/drawingapp/build/"));
 
 const httpServer = app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
