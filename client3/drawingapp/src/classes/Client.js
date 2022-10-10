@@ -8,7 +8,7 @@ export default class Client {
     }
     connect(username) {
         console.log("Connecting to Ws")
-        this.ws = new WebSocket(`ws://localhost:3001/ws?username=${username}&action=lobby`);
+        this.ws = new WebSocket(`ws:///ws?username=${username}&action=lobby`);
         this.username = username;
         
     }
