@@ -28,7 +28,7 @@ html,
 
 .gameView {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 
 }
 
@@ -63,13 +63,14 @@ html,
 
 .gameOverlay{
   position: absolute;
-  margin-left: calc(10vw + 5px);
+  margin-left: calc(15vw + 5px);
+  margin-top: 3px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 545px;
-  height: 379px;
+  width: 700px;
+  height: 50vh;
   background-color: rgba(255, 0, 0, 0.363);
 }
 
@@ -82,7 +83,7 @@ html,
   display: flex;
   justify-content: space-between;
   margin: 0 0 0 0;
-  width: 75vw;
+  width: 1050px;
   height: 60px;
   background-color: white;
   border: 4px dashed rgb(50, 51, 53);
@@ -125,14 +126,15 @@ html,
   flex-direction: column;
   height: 50vh;
   width: 15vw;
+  min-width: 250px;
 
 }
 
 .chatMessages{
   display: flex;
   flex-direction: column;
-  height: 50vh;
-  width: 20vw;
+  height: 100%;
+  width: 100%;
   justify-content: flex-end;
   overflow: hidden;
 }
@@ -140,7 +142,7 @@ html,
 .chatInput{
   display: flex;
   justify-content: center;
-  width: 15vw;
+  width: 100%;
 }
 
 .chatMessage{
@@ -175,9 +177,8 @@ canvas {
   margin: none;
   border: 3px solid black;
   background-color: white;
-  min-height: 0;
-  min-width: 0;
-
+  width: 700px;
+  height: 50vh;
 }
 
 ul {
@@ -202,6 +203,7 @@ li {
   flex-direction: column;
   justify-content: center;
   height: 50vh;
+  width: 60px;
 
 }
 

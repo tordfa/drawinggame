@@ -48,7 +48,7 @@ function Game(props) {
 
     function updateGame(activeplayer, round, maxrounds, words) {
         if (words == "gameover") {
-            console.log("GAME IS GOD MDAMN OVER!")
+            console.log("GAME IS OVER!")
             props.setShowButton(1)
         } else {
             props.setShowButton(0)
@@ -69,8 +69,8 @@ function Game(props) {
     useEffect(() => {
         var canvas = document.getElementById('canvas');
         var ctx = canvas.getContext('2d');
-        ctx.canvas.width = canvasWidth
-        ctx.canvas.height = canvasHeight
+        ctx.canvas.width = canvas.getBoundingClientRect().width;
+        ctx.canvas.height = canvas.getBoundingClientRect().height;
         var drawing = new Drawing(canvas);
         props.client.listenDrawing(drawing, startDrawing, updateGame, stopDrawing, setIsActivePlayer)
     }, [])
